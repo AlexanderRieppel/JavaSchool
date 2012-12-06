@@ -118,18 +118,52 @@ public class ResultSetTableModel extends AbstractTableModel
    public void setQuery( String query ) 
       throws SQLException, IllegalStateException 
    {
-      if ( !connectedToDatabase ) 
-         throw new IllegalStateException( "Not Connected to Database" );
-
-      resultSet = statement.executeQuery( query );
-
-      metaData = resultSet.getMetaData();
-
-      resultSet.last();
-      numberOfRows = resultSet.getRow();
-      
-      fireTableStructureChanged();
-   }
+	   if ( !connectedToDatabase ) 
+	         throw new IllegalStateException( "Not Connected to Database" );
+	      
+	      if(query.toUpperCase().startsWith("SELECT") || query.toUpperCase().startsWith("SHOW")){
+	    	  resultSet = statement.executeQuery( query );// schickt die abfrage zur db
+	      }else if(query.toUpperCase().startsWith("INSERT") || query.toUpperCase().startsWith("UPDATE") || query.toUpperCase().startsWith("DELETE") || query.toUpperCase().startsWith("CREATE") || query.toUpperCase().startsWith("DROP") || query.toUpperCase().startsWith("ALTER") || query.toUpperCase().startsWith("GRANT")){
+	    	  System.out.println("" + statement.executeUpdate( query ));
+	    	  String tb = "";
+	    	  boolean ab1 = false, ab2 = false;
+	    	  for(int i = 0; i < query.length();i++){
+	    		  if(query.toUpperCase().startsWith("INSERT") || query.toUpperCase().startsWith("CREATE")){
+	    			  if(query.charAt(i) == ' '){
+	    				  if(ab1)
+	    					  ab2 = ab1;
+	    				  else
+	    					  ab1 =true;
+	    				  }
+	    			  if(ab1 && ab2){
+	    				  if(query.charAt(i) != ' ')
+	    					  tb += "" + query.charAt(i);
+	    				  else
+	    					  break;
+	    				  }
+	    			  }else if(query.toUpperCase().startsWith("UPDATE")){
+	    				  if(query.charAt(i) == ' '){
+	    					  ab1=true;
+	    				  }
+	    				  if(ab1){
+	    					  if(query.charAt(i) != ' ')
+	    						  tb += "" + query.charAt(i);
+	    					  else
+	    						  break;
+	    					  }
+	    				  }else{
+	    					  break;
+	    				  }
+	    		  }
+	    	  resultSet = statement.executeQuery( "SELECT * FROM " + tb );
+	      }else{
+	    	  System.err.println("Nicht zulässige anweisung!");
+	      }
+	      metaData = resultSet.getMetaData();
+	      resultSet.last();
+	      numberOfRows = resultSet.getRow();
+	      fireTableStructureChanged();
+	   }
 
    public void disconnectFromDatabase()            
    {              

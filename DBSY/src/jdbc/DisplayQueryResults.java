@@ -18,11 +18,11 @@ import javax.swing.Box;
 public class DisplayQueryResults extends JFrame 
 {
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-   static final String DATABASE_URL = "jdbc:mysql://localhost/books";
-   static final String USERNAME= "jhtp6";//Hallo
-   static final String PASSWORD= "jhtp6";
+   static final String DATABASE_URL = "jdbc:mysql://localhost:25565/tvprog_4ahits";
+   static final String USERNAME= "arieppel";
+   static final String PASSWORD= "admin";
    
-   static final String DEFAULT_QUERY = "SELECT * FROM authors";
+   static final String DEFAULT_QUERY = "SELECT * FROM genre";
    
    private ResultSetTableModel tableModel;
    private JTextArea queryArea;
