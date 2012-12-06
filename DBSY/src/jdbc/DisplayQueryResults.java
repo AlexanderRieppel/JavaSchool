@@ -19,7 +19,7 @@ public class DisplayQueryResults extends JFrame
 {
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
    static final String DATABASE_URL = "jdbc:mysql://localhost/books";
-   static final String USERNAME= "jhtp6";//test
+   static final String USERNAME= "jhtp6";//Hallo
    static final String PASSWORD= "jhtp6";
    
    static final String DEFAULT_QUERY = "SELECT * FROM authors";
