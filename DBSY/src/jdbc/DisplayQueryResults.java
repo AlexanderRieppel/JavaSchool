@@ -18,9 +18,9 @@ import javax.swing.Box;
 public class DisplayQueryResults extends JFrame 
 {
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-   static final String DATABASE_URL = "jdbc:mysql://localhost:25565/tvprog_4ahits";
-   static final String USERNAME= "arieppel";
-   static final String PASSWORD= "admin";
+   static final String DATABASE_URL = "jdbc:mysql://localhost/tvprog_4ahits";
+   static final String USERNAME= "alex";
+   static final String PASSWORD= "class";
    
    static final String DEFAULT_QUERY = "SELECT * FROM genre";
    
