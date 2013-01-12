@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding ="iso-8859-1"?>
+<Fluege>
+	<Flug nummer="FI542">
+		<von IATA="REK">Reykjavik</von>
+		<nach IATA="CDG">Paris Charles de Gaulle</nach>
+		<airline>Icelandair</airline>
+		<datum>10-1-2013</datum>
+		<boarding>07:40</boarding>
+	</Flug>
+	<Flug nummer="X9201">
+		<von IATA="REK">Reykjavik</von>
+		<nach IATA="LGW">London Gatwick</nach>
+		<airline>WOW Air</airline>
+		<datum>10-1-2013</datum>
+		<boarding>09:00</boarding>
+	</Flug>
+	<Flug nummer="EI206">
+		<von IATA="DUB">Dublin</von>
+		<nach IATA="MAN">Manchester</nach>
+		<airline>Aer Lingus</airline>
+		<datum>10-1-2013</datum>
+		<boarding>10:50</boarding>
+	</Flug>
+	<Flug nummer="FR7126">
+		<von IATA="DUB">Dublin</von>
+		<nach IATA="LPA">Las Palmas</nach>
+		<airline>Ryanair</airline>
+		<datum>10-1-2013</datum>
+		<boarding>11:50</boarding>
+	</Flug>
+	<Flug nummer="TP842">
+		<von IATA="LIS">Lissabon</von>
+		<nach IATA="">Rome</nach>
+		<airline>TAP Portugal</airline>
+		<datum>10-1-2013</datum>
+		<boarding>14:10</boarding>
+	</Flug>
+	<Flug nummer="TK1760">
+		<von IATA="LIS">Lissabon</von>
+		<nach IATA="IST">Istanbul</nach>
+		<airline>Turkish Airlines</airline>
+		<datum>10-1-2013</datum>
+		<boarding>14:55</boarding>
+	</Flug>
+	<Flug nummer="VCV3013">
+		<von IATA="MAD">Madrid</von>
+		<nach IATA="CCS">Caracas</nach>
+		<airline>Conviasa</airline>
+		<datum>10-1-2013</datum>
+		<boarding>09:30</boarding>
+	</Flug>
+	<Flug nummer="MAU9421">
+		<von IATA="MAD">Madrid</von>
+		<nach IATA="CDG">Paris Charles de Gaulle</nach>
+		<airline>Air France</airline>
+		<datum>10-1-2013</datum>
+		<boarding>12:35</boarding>
+	</Flug>
+	<Flug nummer="BA404">
+		<von IATA="LHR">London Heathrow</von>
+		<nach IATA="EWR">Bruessel</nach>
+		<airline>British Airways</airline>
+		<datum>10-1-2013</datum>
+		<boarding>17:40</boarding>
+	</Flug>
+	<Flug nummer="AA6150">
+		<von IATA="LHR">London Heathrow</von>
+		<nach IATA="EWR">Newark</nach>
+		<airline>American Airlines</airline>
+		<datum>10-1-2013</datum>
+		<boarding>12:35</boarding>
+	</Flug>
+	<Flug nummer="LH1079">
+		<von IATA="LYN">Lyon</von>
+		<nach IATA="FRA">Frankfurt</nach>
+		<airline>Lufthansa</airline>
+		<datum>10-1-2013</datum>
+		<boarding>18:55</boarding>
+	</Flug>
+	<Flug nummer="AF1956">
+		<von IATA="LYN">Lyon</von>
+		<nach IATA="VIE">Wien</nach>
+		<airline>Air France</airline>
+		<datum>10-1-2013</datum>
+		<boarding>19:50</boarding>
+	</Flug>
+	<Flug nummer="KL3123">
+		<von IATA="AMS">Amsterdam</von>
+		<nach IATA="PRG">Prag</nach>
+		<airline>KLM Royal Dutch Airlines</airline>
+		<datum>10-1-2013</datum>
+		<boarding>19:35</boarding>
+	</Flug>
+	<Flug nummer="LX735">
+		<von IATA="AMS">Amsterdam</von>
+		<nach IATA="ZHR">Zuerich</nach>
+		<airline>Swiss Int. Airlines</airline>
+		<datum>10-1-2013</datum>
+		<boarding>20:00</boarding>
+	</Flug>
+	<Flug nummer="LH3492">
+		<von IATA="TXL">Berlin Tegel</von>
+		<nach IATA="MIL">Mailand</nach>
+		<airline>Lufthansa</airline>
+		<datum>10-1-2013</datum>
+		<boarding>20:40</boarding>
+	</Flug>
+	<Flug nummer="AB8100">
+		<von IATA="TXL">Berlin Tegel</von>
+		<nach IATA="STO">Stockholm</nach>
+		<airline>Lufthansa</airline>
+		<datum>10-1-2013</datum>
+		<boarding>21:25</boarding>
+	</Flug>
+	<Flug nummer="SX0508">
+		<von IATA="BRN">Bern</von>
+		<nach IATA="LCY">London City</nach>
+		<airline>Skybus Airlines</airline>
+		<datum>10-1-2013</datum>
+		<boarding>13:20</boarding>
+	</Flug>
+	<Flug nummer="AF1237">
+		<von IATA="BRN">Bern</von>
+		<nach IATA="ORY">Paris Orly</nach>
+		<airline>Air France</airline>
+		<datum>10-1-2013</datum>
+		<boarding>13:20</boarding>
+	</Flug>
+	<Flug nummer="AZ02109">
+		<von IATA="MIL">Mailand</von>
+		<nach IATA="ROM">Rom</nach>
+		<airline>Alitalia</airline>
+		<datum>10-1-2013</datum>
+		<boarding>19:00</boarding>
+	</Flug>
+	<Flug nummer="IG00241">
+		<von IATA="MIL">Mailand</von>
+		<nach IATA="NAP">Neapel</nach>
+		<airline>Meridiana</airline>
+		<datum>10-1-2013</datum>
+		<boarding>19:55</boarding>
+	</Flug>
+	<Flug nummer="ANS8114">
+		<von IATA="PMI">Palma de Mallorca</von>
+		<nach IATA="IBZ">Ibiza</nach>
+		<airline>Air Nostrum</airline>
+		<datum>10-1-2013</datum>
+		<boarding>18:00</boarding>
+	</Flug>
+	<Flug nummer="PE8614">
+		<von IATA="PMI">Palma de Mallorca</von>
+		<nach IATA="VLC">Valencia</nach>
+		<airline>Air Europa</airline>
+		<datum>10-1-2013</datum>
+		<boarding>20:10</boarding>
+	</Flug>
+	<Flug nummer="OS115">
+		<von IATA="VIE">Wien</von>
+		<nach IATA="MUC">Muenchen</nach>
+		<airline>Austrian Airlines</airline>
+		<datum>10-1-2013</datum>
+		<boarding>16:45</boarding>
+	</Flug>
+	<Flug nummer="SK9416">
+		<von IATA="VIE">Wien</von>
+		<nach IATA="OSL">Oslo</nach>
+		<airline>SAS Scandinavian Airlines</airline>
+		<datum>10-1-2013</datum>
+		<boarding>20:10</boarding>
+	</Flug>
+	<Flug nummer="SK383">
+		<von IATA="TRD">Trondheim</von>
+		<nach IATA="OSL">Oslo</nach>
+		<airline>SAS Scandinavian Airlines</airline>
+		<datum>10-1-2013</datum>
+		<boarding>20:50</boarding>
+	</Flug>
+	<Flug nummer="AY2988">
+		<von IATA="OSL">Oslo</von>
+		<nach IATA="HEL">Helsinki</nach>
+		<airline>Finn Air</airline>
+		<datum>11-1-2013</datum>
+		<boarding>07:00</boarding>
+	</Flug>
+	<Flug nummer="OA738">
+		<von IATA="ATH">Athen</von>
+		<nach IATA="KGS">Kos</nach>
+		<airline>Olympic Air</airline>
+		<datum>10-1-2013</datum>
+		<boarding>17:45</boarding>
+	</Flug>
+	<Flug nummer="JU439">
+		<von IATA="ATH">Athen</von>
+		<nach IATA="BEG">Belgrad</nach>
+		<airline>Jat Airways</airline>
+		<datum>10-1-2013</datum>
+		<boarding>18:35</boarding>
+	</Flug>
+	<Flug nummer="LO5675">
+		<von IATA="SVO">Moskau</von>
+		<nach IATA="WAW">Warschau</nach>
+		<airline>LOT Polish Airlines</airline>
+		<datum>11-1-2013</datum>
+		<boarding>00:30</boarding>
+	</Flug>
+	<Flug nummer="SU2459">
+		<von IATA="SVO">Moskau</von>
+		<nach IATA="ORY">Paris</nach>
+		<airline>Aeroflot</airline>
+		<datum>11-1-2013</datum>
+		<boarding>00:15</boarding>
+	</Flug>
+	<Flug nummer="IR1874">
+		<von IATA="IST">Istanbul</von>
+		<nach IATA="THR">Tehran</nach>
+		<airline>Iran Air</airline>
+		<datum>11-1-2013</datum>
+		<boarding>08:25</boarding>
+	</Flug>
+	<Flug nummer="">
+		<von IATA="SVO">Moskau</von>
+		<nach IATA="ORY">Paris</nach>
+		<airline>Aeroflot</airline>
+		<datum>11-1-2013</datum>
+		<boarding>00:15</boarding>
+	</Flug>
+</Fluege>
