@@ -9,19 +9,20 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathExpressionException;
 
+import org.jdom2.JDOMException;
 import org.xml.sax.SAXException;
 
 /**
- * Klasse die eine grafische Oberfläche erstellt, ein Label, einen JButton mit
- * Bild und einen JToggleButton mit Bild enthält.
+ * Erstellt eine Grafische Oberfläche
  * 
- * @author RIEPPEL
- * @version 2011-10-16
+ * @author RIEPPEL,DIMITRIJEVIC,ALY
+ * @version 2013-01-10
  */
 public class XMLGUI extends JPanel {
 	private XPathDemo xpath;
 	private JButton exe = new JButton("Execute");
-	private JButton sav = new JButton("Save");
+	private JButton sav = new JButton("Start");
+	private JButton rsave = new JButton("Save");
 	private JTextField tf1 = new JTextField();
 	private JLabel l1 = new JLabel("Result:"), l2 = new JLabel(
 			"XPath Command here:");
@@ -29,15 +30,14 @@ public class XMLGUI extends JPanel {
 	private JScrollPane sbrText;
 
 	/**
-	 * Erstellt die graphische Oberfläche
+	 * Erstellt die grafische Oberfläche
 	 */
 	public XMLGUI() {
-		this.setLayout(new GridLayout(6, 1));
-
-		xpath = new XPathDemo();
+		this.setLayout(new GridLayout(7, 1));
 
 		exe.addActionListener(new ActionHandler());
 		sav.addActionListener(new ActionHandler());
+		rsave.addActionListener(new ActionHandler());
 		ta = new JTextArea("", 5, 50);
 		ta.setLineWrap(true);
 		sbrText = new JScrollPane(ta);
@@ -53,41 +53,37 @@ public class XMLGUI extends JPanel {
 		this.add(l1);
 		this.add(sbrText);
 		this.add(p2);
+		this.add(rsave);
 	}
+	
+	
 
 	/**
 	 * Klasse mit dem ActionHandler für die Buttons
 	 */
 	private class ActionHandler implements ActionListener {
-		/**
-		 * Wenn der JToggleButton gedrückt wird, wird je nach Wert der
-		 * Zählvariable der Button deaktiviert oder aktiviert
-		 * 
-		 * @param arg0
-		 *            wird für das Ereignis bei einem Button-Druck benötigt
-		 */
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
+			if (arg0.getSource() == sav) {
+				ta.setText(XmlJdom.start());
+
+			}
+			if (arg0.getSource() == rsave) {
+
+			}
 			if (arg0.getSource() == exe) {
 				try {
-					xpath.execute(tf1.getText());
+					if (tf1.getText().equals("")) {
+						ta.setText("Geben sie bitte etwas ein");
+					} else {
+
+						xpath.execute(tf1.getText());
+					}
 				} catch (TransformerException | XPathExpressionException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				ta.setText(xpath.display());
 			}
-		}
-	}
-
-	private class TextHandler implements TextListener {
-		/**
-		 * 
-		 * 
-		 * @param arg0
-		 */
-		@Override
-		public void textValueChanged(TextEvent arg0) {
 
 		}
 	}
